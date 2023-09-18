@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Space+Mono&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:F5F5F5;
+  color:black;
+}
+a{
+  font-family: "Montserrat",sans-serif;
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: bold;
+
+
+}
+a:hover{
+  scale: 1.25;
+}
+a:active{
+  scale: 0.95;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  position: sticky;
+}
+.links li{
+  display:inline-block;
+  padding: 0  20px;
+}
+.logo{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+.signup_btn a{
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+
+}
+
+.links li:hover{
+  scale: 1.25;
+}
+.links li:active{
+  scale: 0.95;
+}
+
+.signup_btn:active{
+  scale: 0.95;
+}
+.toggle{
+  display: none;
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top :60px;
+  width: 100px;
+  height: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open{
+  height: 250px;
+}
+.dropdown li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding :0.7rem;
+}
+  @media screen and (max-width: 720px) {
+    .navbar .links ,
+    .navbar .signup_btn {
+      display: none;
+  }
+    .toggle{
+      display: block;
+    }
+    .dropdown{
+      display: block;
+    }
+}
+
+#home{
+   background-color: white;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+}
+#about{
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200vh;
+}
+#details{
+  display: flex;
+  justify-content: center;
+}
+#works{
+  display: flex;
+  justify-content: center;
+}
+
+#proj img{
+  height: 300px;
+  width:450px;
+  margin-left: -3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+.details{
+    margin-left: 120px;
+
+}
+#contact{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.socialmedia li{
+    list-style: none;
+    margin:10rem 3rem;
+
+
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons i{
+    font-size: 2rem;
+}
+#contact .container{
+    margin-top: 200px;
+}
